@@ -1,0 +1,133 @@
+/* You can add global styles to this file, and also import other style files */
+/* Ustalenie właściwości "box-sizing" dla wszystkich elementów */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    box-sizing: border-box;
+  }
+  
+  main {
+    flex-grow: 1;
+  }
+  html, body {
+    height: 100%
+  }
+  /* Właściwości dla body */
+  body {
+    font-family:  poppins;
+    font-size: 14px;
+    background-color: white;
+    margin:0;
+    
+    }
+  /* Linki */
+
+    div{
+    
+      padding: 20px;
+      color: white;
+      background-color: #6c757d;
+      width: auto;
+      text-align: center;
+      font-size: 30px;
+      font-weight: normal;
+      
+      
+  }
+  /* Klasa kontenera, która ma ograniczoną szerokość i wyśrodkowuje content */
+  /* Ustawienie lewego i prawego marginesu na "auto" wyśrodkowuje kontener */
+  .container {
+    margin: 20px auto;
+    width: 100%;
+  }
+  
+  /* Tabele */
+  table {
+    width: 100%;
+  }
+  table th,
+  table td {
+    padding: 8px;
+    text-align: left;
+  }
+  /* Cieniujemy co drugi (parzysty) wiersz tabeli */
+  /* Używamy tbody, aby upewnić się, że nie cieniujemy nagłówka - to zachowuje kolejność cieniowania */
+  table tbody > tr:nth-child(odd) {
+    background: #e2e2e2;
+  }
+  
+  /* Przyciski */
+  .button {
+    display: inline-block;
+    margin: 2px 2px;
+    padding: 10px;
+    border: 0;
+    background: #999999;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 1;
+    border-radius: 0;
+  }
+  /* Przycisk po najechaniu kursorem */
+  .button:hover {
+    background: #888888;
+  }
+  /* Przycisk w stanie aktywnym */
+  .button:active,
+  .button:focus {
+    background: #777777;
+  }
+  
+  /* Przycisk w kolorze zielonym */
+  .button-green {
+    background: #5caf01;
+  }
+  .button-green:hover {
+    background: #6c757d;
+    color:white
+  }
+  .button-green:active,
+  .button-green:focus {
+    background: #5caf01;
+  }
+ 
+  a {
+    color:black;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #5caf01;
+  }
+  
+  /* Przycisk w kolorze czerwonym */
+  .button-red {
+    background: #dd3333;
+  }
+  .button-red:hover {
+    background:  #6c757d;
+  }
+  .button-red:active,
+  .button-red:focus {
+    background: #bb2222;
+  }
+
+  footer{
+    padding: 10px;
+    color: black;
+    width: auto;
+    text-align: center;
+    font-size: 10px;
+    font-weight: normal;
+    margin:0;
+    border-top: 2px solid #eeeeee;
+  
+}
+  
+  /* Media Query dla urządzeń o minimalnej szerokości 992px */
+  /* czyli dla komputerów stacjonarnych */
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }

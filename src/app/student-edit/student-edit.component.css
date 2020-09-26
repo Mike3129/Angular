@@ -1,0 +1,30 @@
+h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    border-bottom: 2px solid #eeeeee;
+    font-size: 20px;
+    text-align: left;
+}
+
+div {
+   text-align: left;
+   padding: 10px;
+   background-color: white;
+   color:black;
+  }
+label {
+    display: inline-block;
+    margin-top: 5px;
+    width: auto;
+    font-size: 16px;
+    display: block;
+ 
+  }
+  
+  input {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+  }

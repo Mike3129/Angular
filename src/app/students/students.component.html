@@ -1,0 +1,31 @@
+<h1>Baza danych studentów</h1>
+<section>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nazwa użytkownika</th>
+          <th>Imię i nazwisko</th>
+          <th>Adres e-mail</th>
+          <th>Akcje</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students">
+          <td>{{student.id}}</td>
+          <td>{{student.username}}</td>
+          <td>{{student.name}}</td>
+          <td>
+            <a href="mailto:{{student.email}}">{{student.email}}</a>
+          </td>
+          <td>
+            <a routerLink="/edit/{{student.id}}" class="button button-green">Edytuj</a>
+            <button class="button button-red" (click)="delete(student)">Usuń</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <app-new-student [students]="students">
+    </app-new-student>
+
+  </section>
